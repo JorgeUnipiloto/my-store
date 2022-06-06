@@ -1,0 +1,87 @@
+<!--<div class="modal">
+
+    <div class="modal_body">
+        <h3>Contenido del modal</h3>
+
+
+        <button (click)="closeModal()">cerrar</button>
+    </div>
+
+</div> -->
+
+<head>
+
+  <TITLE>objetos redondeados</TITLE>
+
+  <style>
+
+      .round {
+
+background-color: #fff;
+width: auto;
+height: auto;
+margin: 0 auto 15px auto;
+padding: 5px;
+border: 1px solid #ccc;
+
+-moz-border-radius: 11px;
+-webkit-border-radius: 11px;
+border-radius: 11px;
+behavior: url(border-radius.htc);
+
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="formulario" >
+
+     <table >
+
+      <h3>Create New Client</h3>
+
+         <tr>
+             <td style="vertical-align: top;padding-top:5px; ">Name: </td>
+             <td><input type="text" class="form-control" id="nombre" [(ngModel)]="cliente.name"></td>
+
+         </tr>
+
+      <tr>
+        <td style="vertical-align: top;padding-top:5px; ">Phone: </td>
+        <td><input type="number" class="" id="" [(ngModel)]="cliente.phone"></td>
+
+    </tr>
+    <tr>
+      <td style="vertical-align: top;padding-top:5px; ">E-mail: </td>
+      <td><input type="emailyy" class="" id="" [(ngModel)]="cliente.email"></td>
+
+  </tr>
+  <tr>
+    <td style="vertical-align: top;padding-top:5px; ">Star date: </td>
+    <td><input type="date" class="" id="" [(ngModel)]="cliente.sdate"></td>
+    <tr>
+
+      <tr>
+        <td style="vertical-align: top;padding-top:5px; ">End date: </td>
+        <td><input type="date" class="" id="" [(ngModel)]="cliente.edate"></td>
+        <tr>
+
+      <td style="vertical-align: top;padding-top:5px; "> <button (click)="closeModal()">X</button></td>
+      <td style="vertical-align: top;padding-top:5px; "> <button class="btn btn success" role="button" (click)="create()">OK</button></td>
+
+
+
+
+  </tr>
+
+
+
+     </table>
+
+  </div>
+
+ </body>
+
